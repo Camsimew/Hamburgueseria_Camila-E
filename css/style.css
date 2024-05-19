@@ -481,8 +481,106 @@ div.figure {
 
 }
 
+/*fin blog*/
+
+/*inicio menu*/
 
 
+div .menu-food {
+    background-color: var(--colorsecundario);
+    color: white;
+
+}
+
+div .titulo {
+    color: var(--colorprincipal);
+    font-size: 1.07rem;
+    padding: 1.2rem;
+    align-content: center;
+    text-align: center;
+
+
+
+}
+
+div .nav-top .titulo {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+        color: white;
+        text-align: center;
+    }
+
+    & i {
+        font-size: 140%;
+        color: var(--colorprincipal)
+    }
+
+
+}
+
+.div nav .titulo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.25rem;
+}
+
+.div .titulo h2 {
+    align-content: center;
+    text-align: center;
+
+
+}
+
+.container-menu {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 350px auto;
+
+
+}
+
+
+div .sidebar {
+    display: grid;
+    grid-template-columns: calc(80%);
+    flex-wrap: wrap;
+    position: center;
+}
+
+/*div .main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 20%;
+*/
+
+
+div .menuflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 20%;
+
+}
+
+div .main figure {
+    padding-right: 50%;
+    size: 50%;
+
+
+}
+
+
+
+
+
+
+
+/*fin menu*/
 /* inicio media queries */
 
 
