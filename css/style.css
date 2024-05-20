@@ -492,7 +492,7 @@ div .menu-food {
     background-color: var(--colorsecundario);
     color: white;
     padding-left: 15px;
-    padding-bottom: 9.9%;
+    padding-bottom: 6.15%;
     padding-top: 60px;
 }
 
@@ -686,6 +686,11 @@ div .menuflex {
 
     #aboutus .flex {
         flex-direction: row;
+    }
+
+    .nav-top .container span {
+        display: none;
+
     }
 
 }
