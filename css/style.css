@@ -489,6 +489,7 @@ div.figure {
 div .menu-food {
     background-color: var(--colorsecundario);
     color: white;
+    padding-bottom: 10%;
 
 }
 
@@ -549,36 +550,57 @@ div .sidebar {
     grid-template-columns: calc(80%);
     flex-wrap: wrap;
     position: center;
+    padding: 1.8rem 0;
 }
 
-/*div .main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-right: 20%;
-*/
+
 
 
 div .menuflex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
 
+    & figure {
+        padding: var(--gap);
+        border: 100px;
+        border-color: var(--colorsecundario);
+
+
+    }
 }
 
-div .main figure {
-    padding-right: 50%;
-    size: 50%;
+.column {
+    padding: 20px;
+    line-height: 24px;
+
+    & a.boton {
+        font-weight: 500;
+        background-color: var(--colorsecundario);
+        color: var(--colorprincipal);
+        border: none;
+        padding: 0;
+
+
+    }
+
+    & h5 {
+        font-size: 18px;
+        font-weight: 600;
+
+        & span {
+            padding-left: 20px;
+            color: var(--colorprincipal);
+
+
+
+        }
+
+    }
 
 
 }
-
-
-
-
-
-
 
 /*fin menu*/
 /* inicio media queries */
