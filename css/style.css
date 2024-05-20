@@ -424,11 +424,13 @@ div.date {
     font-style: bold;
     font-weight: 700;
     font-size: 20px;
-    opacity: 85%;
-    width: 90px;
-    height: 90px;
+    opacity: 81%;
+    width: 80px;
+    height: 80px;
     align-content: center;
     text-align: center;
+    padding: var(--gap);
+    line-height: 28px;
 
 }
 
@@ -451,7 +453,7 @@ div.figure {
 .blog-container h3 {
     font-weight: 500;
     font-size: 1.25rem;
-    padding: 1.30rem 0 0 1.30rem;
+    padding: 1.85rem 0 0 1.30rem;
 
 }
 
@@ -489,20 +491,41 @@ div.figure {
 div .menu-food {
     background-color: var(--colorsecundario);
     color: white;
-    padding-bottom: 10%;
-
+    padding-left: 15px;
+    padding-bottom: 9.9%;
+    padding-top: 60px;
 }
 
-div .titulo {
-    color: var(--colorprincipal);
-    font-size: 1.07rem;
-    padding: 1.2rem;
-    align-content: center;
+div .titulo h2 {
+    font-family: var(--fuentetitulos);
+    font-size: 2rem;
     text-align: center;
+    padding-bottom: 5px;
 
-
+    & span {
+        color: var(--colorprincipal)
+    }
 
 }
+
+div .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto 1.25rem auto;
+    color: var(--colorprincipal);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.25rem;
+
+    & hr {
+        position: absolute;
+        width: 100%;
+        border-color: var(--colorprincipal);
+        top: -0.125rem;
+    }
+}
+
+
 
 div .nav-top .titulo {
     display: flex;
@@ -535,11 +558,11 @@ div .nav-top .titulo {
 }
 
 .container-menu {
-    max-width: var(--anchomaximo);
     margin: 0 auto;
     display: grid;
     padding: 0;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 408px auto;
+    max-width: var(--anchomaximo);
 
 
 }
@@ -547,13 +570,52 @@ div .nav-top .titulo {
 
 div .sidebar {
     display: grid;
-    grid-template-columns: calc(80%);
+    grid-template-columns: calc(85%);
     flex-wrap: wrap;
     position: center;
-    padding: 1.8rem 0;
+    padding: 0.7rem 0;
+
+    & ul {
+        line-height: 50px;
+    }
+
+    & li {
+        padding-left: 15px;
+    }
+
+    li:hover {
+        background-color: var(--colorprincipal);
+        border-radius: 9px;
+
+    }
+
+    & h3 {
+        font-size: 18px;
+        font-weight: 500;
+        height: 20px;
+    }
 }
 
 
+div .leftline {
+    width: 58px;
+    height: 10px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0;
+
+    & hr {
+        border-color: var(--colorprincipal);
+    }
+
+}
+
+& h4 {
+    line-height: 25px;
+    font-size: 15px;
+
+
+}
 
 
 div .menuflex {
@@ -572,7 +634,7 @@ div .menuflex {
 }
 
 .column {
-    padding: 20px;
+    padding: 10px;
     line-height: 24px;
 
     & a.boton {
