@@ -492,7 +492,7 @@ div .menu-food {
     background-color: var(--colorsecundario);
     color: white;
     padding-left: 15px;
-    padding-bottom: 6.10%;
+    padding-bottom: 10.75rem;
     padding-top: 60px;
 }
 
@@ -667,9 +667,7 @@ div .menuflex {
 /*fin menu*/
 /* inicio media queries */
 
-
-@media(width >=37.5rem) {
-
+@media (min-width: 37.5rem) {
     #ourservices .grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -690,25 +688,22 @@ div .menuflex {
 
     .nav-top .container span {
         display: none;
-
     }
-
 }
 
-/* @media(min-width: 768px) forma antigua */
-@media(width >=48rem) {
+@media (min-width: 48rem) {
     header .nav-top .container {
         justify-content: space-between;
+    }
 
-        & span {
-            display: inline;
-        }
+    header .nav-top .container span {
+        display: inline;
+    }
 
-        & a {
-            color: white;
-            text-decoration: none;
-            font-size: 110%;
-        }
+    header .nav-top .container a {
+        color: white;
+        text-decoration: none;
+        font-size: 110%;
     }
 
     footer {
@@ -722,11 +717,13 @@ div .menuflex {
     #ourservices .grid article:last-child {
         grid-column: 3/4;
     }
+
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media(width>=62.75rem) {
-
-    /* 1004px */
+@media (min-width: 62.75rem) {
     header .hamburguesa {
         display: none;
     }
@@ -746,7 +743,25 @@ div .menuflex {
         border: 0px;
         padding: 0rem 0rem 0rem 2.5rem;
     }
+
+    .blog-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-menu {
+        grid-template-columns: 1fr 3fr;
+    }
 }
 
+@media (min-width: 75rem) {
+    .container-menu {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
 
 /* fin de media queries */
